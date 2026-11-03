@@ -1,0 +1,12 @@
+# No base/background colours here on purpose: Streamlit follows the OS light/dark
+# preference and the in-app Appearance control overrides it through ui/design.py.
+[theme]
+primaryColor = "#0071e3"
+font = "sans serif"
+
+[server]
+maxUploadSize = 500
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false

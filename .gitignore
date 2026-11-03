@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment / secrets
+.env
+
+# Runtime-generated data (safe to regenerate; don't want to commit user
+# uploads or the local SQLite database that accumulates analysis history)
+data/forensics.db
+data/forensics.db-journal
+data/logs/
+data/cache/
+data/snapshots/
+
+# OS/editor cruft
+.DS_Store
+.idea/
+.vscode/
+
+# Everything the app generates at runtime: uploaded memory dumps, chain-of-custody logs,
+# reports, IOC exports, analytics. Never commit evidence. (.gitkeep keeps the folders.)
+data/*
+!data/.gitkeep
+data/memory_dumps/*
+data/reports/*
+data/iocs/*
+data/analytics/*
+!data/*/.gitkeep
+
+# Streamlit secrets and local overrides
+.streamlit/secrets.toml
+
+# Test / coverage output
+.coverage
+htmlcov/
